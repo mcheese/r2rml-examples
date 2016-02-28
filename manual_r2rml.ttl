@@ -1,0 +1,92 @@
+@prefix map: <#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix vocab: <vocab/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+map:student
+    rr:logicalTable [ rr:tableName "`ex_stud`.`student`"; ];
+    rr:subjectMap [ rr:class vocab:student; rr:template "student/{`stud_id`}"; ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:student_name;
+        rr:objectMap [ rr:column "`name`"; ];
+    ];
+    .
+map:modul
+    rr:logicalTable [ rr:tableName "`ex_stud`.`modul`"; ];
+    rr:subjectMap [ rr:class vocab:modul; rr:template "modul/{`mod_id`}"; ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:modul_name;
+        rr:objectMap [ rr:column "`name`"; ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:modul_fak;
+        rr:objectMap [
+            rr:parentTriplesMap map:fak;
+            rr:joinCondition [ rr:child "`fak_id`"; rr:parent "`fak_id`"; ];
+        ];
+    ];
+    .
+map:imma
+    rr:logicalTable [ rr:tableName "`ex_stud`.`imma`"; ];
+    rr:subjectMap [ rr:template "student/{`stud_id`}"; ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:imma;
+        rr:objectMap [
+            rr:parentTriplesMap map:semester;
+            rr:joinCondition [ rr:child "`sem_id`"; rr:parent "`sem_id`"; ];
+        ];
+    ];
+    .
+map:fak
+    rr:logicalTable [ rr:tableName "`ex_stud`.`fak`"; ];
+    rr:subjectMap [ rr:class vocab:fak; rr:template "fak/{`fak_id`}"; ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:fak_name;
+        rr:objectMap [ rr:column "`name`"; ];
+    ];
+    .
+map:semester
+    rr:logicalTable [ rr:tableName "`ex_stud`.`semester`"; ];
+    rr:subjectMap [ rr:class vocab:semester; rr:template "semester/{`sem_id`}"; ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:semester_bis;
+        rr:objectMap [ rr:column "`bis`"; ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:semester_von;
+        rr:objectMap [ rr:column "`von`"; ];
+    ];
+    .
+map:einschr
+    rr:logicalTable [ rr:tableName "`ex_stud`.`einschr`"; ];
+    rr:subjectMap [ rr:template "einschr/{`mod_id`}/{`sem_id`}/{`stud_id`}"; rr:termType rr:BlankNode; ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:einschr_modul;
+        rr:objectMap [
+            rr:parentTriplesMap map:modul;
+            rr:joinCondition [ rr:child "`mod_id`"; rr:parent "`mod_id`"; ];
+        ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:einschr_semester;
+        rr:objectMap [
+            rr:parentTriplesMap map:semester;
+            rr:joinCondition [ rr:child "`sem_id`"; rr:parent "`sem_id`"; ];
+        ];
+    ];
+    .
+
+map:einschr_stud
+    rr:logicalTable [ rr:tableName "`ex_stud`.`einschr`"; ];
+    rr:subjectMap [ rr:template "student/{`stud_id`}"; ];
+    rr:predicateObjectMap [
+        rr:predicate vocab:einschr;
+        rr:objectMap [
+            rr:parentTriplesMap map:einschr;
+            rr:joinCondition [ rr:child "`stud_id`"; rr:parent "`stud_id`"; ];
+        ];
+    ];
+    .
+

@@ -1,0 +1,91 @@
+<http://example/einschr/10/100/1000> <http://example/vocab/einschr_mod_id> <http://example/modul/10> .
+<http://example/einschr/10/101/1001> <http://example/vocab/einschr_mod_id> <http://example/modul/10> .
+<http://example/einschr/11/100/1000> <http://example/vocab/einschr_mod_id> <http://example/modul/11> .
+<http://example/einschr/11/101/1001> <http://example/vocab/einschr_mod_id> <http://example/modul/11> .
+<http://example/einschr/12/101/1000> <http://example/vocab/einschr_mod_id> <http://example/modul/12> .
+<http://example/einschr/12/100/1002> <http://example/vocab/einschr_mod_id> <http://example/modul/12> .
+<http://example/einschr/12/102/1002> <http://example/vocab/einschr_mod_id> <http://example/modul/12> .
+<http://example/einschr/10/100/1000> <http://example/vocab/einschr_sem_id> <http://example/semester/100> .
+<http://example/einschr/11/100/1000> <http://example/vocab/einschr_sem_id> <http://example/semester/100> .
+<http://example/einschr/12/100/1002> <http://example/vocab/einschr_sem_id> <http://example/semester/100> .
+<http://example/einschr/12/101/1000> <http://example/vocab/einschr_sem_id> <http://example/semester/101> .
+<http://example/einschr/10/101/1001> <http://example/vocab/einschr_sem_id> <http://example/semester/101> .
+<http://example/einschr/11/101/1001> <http://example/vocab/einschr_sem_id> <http://example/semester/101> .
+<http://example/einschr/12/102/1002> <http://example/vocab/einschr_sem_id> <http://example/semester/102> .
+<http://example/einschr/10/100/1000> <http://example/vocab/einschr_stud_id> <http://example/student/1000> .
+<http://example/einschr/11/100/1000> <http://example/vocab/einschr_stud_id> <http://example/student/1000> .
+<http://example/einschr/12/101/1000> <http://example/vocab/einschr_stud_id> <http://example/student/1000> .
+<http://example/einschr/10/101/1001> <http://example/vocab/einschr_stud_id> <http://example/student/1001> .
+<http://example/einschr/11/101/1001> <http://example/vocab/einschr_stud_id> <http://example/student/1001> .
+<http://example/einschr/12/100/1002> <http://example/vocab/einschr_stud_id> <http://example/student/1002> .
+<http://example/einschr/12/102/1002> <http://example/vocab/einschr_stud_id> <http://example/student/1002> .
+<http://example/student/1000> <http://example/vocab/imma> <http://example/semester/100> .
+<http://example/student/1002> <http://example/vocab/imma> <http://example/semester/100> .
+<http://example/student/1000> <http://example/vocab/imma> <http://example/semester/101> .
+<http://example/student/1001> <http://example/vocab/imma> <http://example/semester/101> .
+<http://example/student/1001> <http://example/vocab/imma> <http://example/semester/102> .
+<http://example/student/1002> <http://example/vocab/imma> <http://example/semester/102> .
+<http://example/modul/10> <http://example/vocab/modul_fak_id> <http://example/fak/1> .
+<http://example/modul/11> <http://example/vocab/modul_fak_id> <http://example/fak/1> .
+<http://example/modul/12> <http://example/vocab/modul_fak_id> <http://example/fak/2> .
+<http://example/semester/100> <http://www.w3.org/2000/01/rdf-schema#label> "semester #100" .
+<http://example/semester/101> <http://www.w3.org/2000/01/rdf-schema#label> "semester #101" .
+<http://example/semester/102> <http://www.w3.org/2000/01/rdf-schema#label> "semester #102" .
+<http://example/semester/100> <http://example/vocab/semester_sem_id> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/semester/101> <http://example/vocab/semester_sem_id> "101"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/semester/102> <http://example/vocab/semester_sem_id> "102"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/semester/100> <http://example/vocab/semester_bis> "2015-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example/semester/101> <http://example/vocab/semester_bis> "2015-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example/semester/102> <http://example/vocab/semester_bis> "2016-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example/semester/100> <http://example/vocab/semester_von> "2014-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example/semester/101> <http://example/vocab/semester_von> "2015-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example/semester/102> <http://example/vocab/semester_von> "2015-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example/semester/100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/semester> .
+<http://example/semester/101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/semester> .
+<http://example/semester/102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/semester> .
+<http://example/einschr/10/100/1000> <http://www.w3.org/2000/01/rdf-schema#label> "einschr #10/100/1000" .
+<http://example/einschr/10/101/1001> <http://www.w3.org/2000/01/rdf-schema#label> "einschr #10/101/1001" .
+<http://example/einschr/11/100/1000> <http://www.w3.org/2000/01/rdf-schema#label> "einschr #11/100/1000" .
+<http://example/einschr/11/101/1001> <http://www.w3.org/2000/01/rdf-schema#label> "einschr #11/101/1001" .
+<http://example/einschr/12/101/1000> <http://www.w3.org/2000/01/rdf-schema#label> "einschr #12/101/1000" .
+<http://example/einschr/12/100/1002> <http://www.w3.org/2000/01/rdf-schema#label> "einschr #12/100/1002" .
+<http://example/einschr/12/102/1002> <http://www.w3.org/2000/01/rdf-schema#label> "einschr #12/102/1002" .
+<http://example/einschr/10/100/1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/einschr> .
+<http://example/einschr/10/101/1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/einschr> .
+<http://example/einschr/11/100/1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/einschr> .
+<http://example/einschr/11/101/1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/einschr> .
+<http://example/einschr/12/101/1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/einschr> .
+<http://example/einschr/12/100/1002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/einschr> .
+<http://example/einschr/12/102/1002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/einschr> .
+<http://example/student/1000> <http://example/vocab/student_stud_id> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/student/1001> <http://example/vocab/student_stud_id> "1001"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/student/1002> <http://example/vocab/student_stud_id> "1002"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/student/1000> <http://www.w3.org/2000/01/rdf-schema#label> "student #1000" .
+<http://example/student/1001> <http://www.w3.org/2000/01/rdf-schema#label> "student #1001" .
+<http://example/student/1002> <http://www.w3.org/2000/01/rdf-schema#label> "student #1002" .
+<http://example/student/1000> <http://example/vocab/student_name> "Adams" .
+<http://example/student/1001> <http://example/vocab/student_name> "Baker" .
+<http://example/student/1002> <http://example/vocab/student_name> "Clark" .
+<http://example/student/1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/student> .
+<http://example/student/1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/student> .
+<http://example/student/1002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/student> .
+<http://example/modul/10> <http://example/vocab/modul_mod_id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/modul/11> <http://example/vocab/modul_mod_id> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/modul/12> <http://example/vocab/modul_mod_id> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/modul/10> <http://www.w3.org/2000/01/rdf-schema#label> "modul #10" .
+<http://example/modul/11> <http://www.w3.org/2000/01/rdf-schema#label> "modul #11" .
+<http://example/modul/12> <http://www.w3.org/2000/01/rdf-schema#label> "modul #12" .
+<http://example/modul/10> <http://example/vocab/modul_name> "Algebra" .
+<http://example/modul/11> <http://example/vocab/modul_name> "Analysis" .
+<http://example/modul/12> <http://example/vocab/modul_name> "BWL" .
+<http://example/modul/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/modul> .
+<http://example/modul/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/modul> .
+<http://example/modul/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/modul> .
+<http://example/fak/1> <http://example/vocab/fak_name> "Mathematik" .
+<http://example/fak/2> <http://example/vocab/fak_name> "Wirtschaft" .
+<http://example/fak/1> <http://www.w3.org/2000/01/rdf-schema#label> "fak #1" .
+<http://example/fak/2> <http://www.w3.org/2000/01/rdf-schema#label> "fak #2" .
+<http://example/fak/1> <http://example/vocab/fak_fak_id> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/fak/2> <http://example/vocab/fak_fak_id> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example/fak/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/fak> .
+<http://example/fak/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example/vocab/fak> .

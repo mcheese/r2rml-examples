@@ -1,0 +1,145 @@
+
+<http://example/einschr/stud_id=1000;mod_id=10;sem_id=100> <http://example/einschr#ref-stud_id> <http://example/student/stud_id=1000> ;
+	a <http://example/einschr> ;
+	<http://example/einschr#ref-sem_id> <http://example/semester/sem_id=100> ;
+	<http://example/einschr#mod_id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#sem_id> "100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#stud_id> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#ref-mod_id> <http://example/modul/mod_id=10> .
+
+<http://example/einschr/stud_id=1001;mod_id=10;sem_id=101> <http://example/einschr#ref-sem_id> <http://example/semester/sem_id=101> ;
+	<http://example/einschr#ref-stud_id> <http://example/student/stud_id=1001> ;
+	<http://example/einschr#ref-mod_id> <http://example/modul/mod_id=10> ;
+	a <http://example/einschr> ;
+	<http://example/einschr#sem_id> "101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#mod_id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#stud_id> "1001"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/einschr/stud_id=1000;mod_id=11;sem_id=100> a <http://example/einschr> ;
+	<http://example/einschr#ref-sem_id> <http://example/semester/sem_id=100> ;
+	<http://example/einschr#ref-stud_id> <http://example/student/stud_id=1000> ;
+	<http://example/einschr#ref-mod_id> <http://example/modul/mod_id=11> ;
+	<http://example/einschr#mod_id> "11"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#sem_id> "100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#stud_id> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/einschr/stud_id=1001;mod_id=11;sem_id=101> <http://example/einschr#ref-mod_id> <http://example/modul/mod_id=11> ;
+	<http://example/einschr#mod_id> "11"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#ref-stud_id> <http://example/student/stud_id=1001> ;
+	<http://example/einschr#ref-sem_id> <http://example/semester/sem_id=101> ;
+	<http://example/einschr#stud_id> "1001"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#sem_id> "101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/einschr> .
+
+<http://example/einschr/stud_id=1000;mod_id=12;sem_id=101> <http://example/einschr#sem_id> "101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#ref-stud_id> <http://example/student/stud_id=1000> ;
+	<http://example/einschr#mod_id> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#ref-sem_id> <http://example/semester/sem_id=101> ;
+	<http://example/einschr#ref-mod_id> <http://example/modul/mod_id=12> ;
+	<http://example/einschr#stud_id> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/einschr> .
+
+<http://example/einschr/stud_id=1002;mod_id=12;sem_id=100> a <http://example/einschr> ;
+	<http://example/einschr#sem_id> "100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#stud_id> "1002"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#ref-sem_id> <http://example/semester/sem_id=100> ;
+	<http://example/einschr#ref-mod_id> <http://example/modul/mod_id=12> ;
+	<http://example/einschr#ref-stud_id> <http://example/student/stud_id=1002> ;
+	<http://example/einschr#mod_id> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/einschr/stud_id=1002;mod_id=12;sem_id=102> a <http://example/einschr> ;
+	<http://example/einschr#ref-stud_id> <http://example/student/stud_id=1002> ;
+	<http://example/einschr#mod_id> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#ref-sem_id> <http://example/semester/sem_id=102> ;
+	<http://example/einschr#stud_id> "1002"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/einschr#ref-mod_id> <http://example/modul/mod_id=12> ;
+	<http://example/einschr#sem_id> "102"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/fak/fak_id=1> <http://example/fak#name> "Mathematik" ;
+	a <http://example/fak> ;
+	<http://example/fak#fak_id> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/fak/fak_id=2> <http://example/fak#fak_id> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/fak> ;
+	<http://example/fak#name> "Wirtschaft" .
+
+<http://example/imma/stud_id=1000;sem_id=100> <http://example/imma#sem_id> "100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/imma#ref-sem_id> <http://example/semester/sem_id=100> ;
+	a <http://example/imma> ;
+	<http://example/imma#stud_id> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/imma#ref-stud_id> <http://example/student/stud_id=1000> .
+
+<http://example/imma/stud_id=1002;sem_id=100> <http://example/imma#sem_id> "100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/imma#ref-sem_id> <http://example/semester/sem_id=100> ;
+	<http://example/imma#stud_id> "1002"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/imma#ref-stud_id> <http://example/student/stud_id=1002> ;
+	a <http://example/imma> .
+
+<http://example/imma/stud_id=1000;sem_id=101> <http://example/imma#ref-stud_id> <http://example/student/stud_id=1000> ;
+	a <http://example/imma> ;
+	<http://example/imma#ref-sem_id> <http://example/semester/sem_id=101> ;
+	<http://example/imma#stud_id> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/imma#sem_id> "101"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/imma/stud_id=1001;sem_id=101> <http://example/imma#stud_id> "1001"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/imma#ref-stud_id> <http://example/student/stud_id=1001> ;
+	<http://example/imma#sem_id> "101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/imma> ;
+	<http://example/imma#ref-sem_id> <http://example/semester/sem_id=101> .
+
+<http://example/imma/stud_id=1001;sem_id=102> <http://example/imma#ref-stud_id> <http://example/student/stud_id=1001> ;
+	a <http://example/imma> ;
+	<http://example/imma#ref-sem_id> <http://example/semester/sem_id=102> ;
+	<http://example/imma#sem_id> "102"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/imma#stud_id> "1001"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/imma/stud_id=1002;sem_id=102> a <http://example/imma> ;
+	<http://example/imma#ref-sem_id> <http://example/semester/sem_id=102> ;
+	<http://example/imma#sem_id> "102"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/imma#ref-stud_id> <http://example/student/stud_id=1002> ;
+	<http://example/imma#stud_id> "1002"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/modul/mod_id=10> <http://example/modul#name> "Algebra" ;
+	<http://example/modul#fak_id> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/modul#mod_id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/modul> ;
+	<http://example/modul#ref-fak_id> <http://example/fak/fak_id=1> .
+
+<http://example/modul/mod_id=11> <http://example/modul#fak_id> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/modul> ;
+	<http://example/modul#name> "Analysis" ;
+	<http://example/modul#mod_id> "11"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/modul#ref-fak_id> <http://example/fak/fak_id=1> .
+
+<http://example/modul/mod_id=12> <http://example/modul#fak_id> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/modul> ;
+	<http://example/modul#ref-fak_id> <http://example/fak/fak_id=2> ;
+	<http://example/modul#name> "BWL" ;
+	<http://example/modul#mod_id> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/semester/sem_id=100> a <http://example/semester> ;
+	<http://example/semester#bis> "2015-04-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://example/semester#sem_id> "100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/semester#von> "2014-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://example/semester/sem_id=101> <http://example/semester#sem_id> "101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/semester#bis> "2015-10-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	a <http://example/semester> ;
+	<http://example/semester#von> "2015-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://example/semester/sem_id=102> a <http://example/semester> ;
+	<http://example/semester#von> "2015-10-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://example/semester#bis> "2016-04-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://example/semester#sem_id> "102"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://example/student/stud_id=1000> <http://example/student#stud_id> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/student> ;
+	<http://example/student#name> "Adams" .
+
+<http://example/student/stud_id=1001> <http://example/student#stud_id> "1001"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	a <http://example/student> ;
+	<http://example/student#name> "Baker" .
+
+<http://example/student/stud_id=1002> a <http://example/student> ;
+	<http://example/student#stud_id> "1002"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	<http://example/student#name> "Clark" .
